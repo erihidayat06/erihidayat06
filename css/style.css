@@ -20,8 +20,8 @@ body {
 
 .nav li {
   display: inline;
-  margin-right: 10px;
   width: 100%;
+  padding: 20px;
 }
 
 .nav a {
@@ -30,15 +30,17 @@ body {
 }
 
 .nav a:hover {
-  font-weight: bold;
   color: rgb(250, 80, 58);
   border-bottom: 3px solid red;
+  background-color: #21b5d9;
+  padding: 20px;
 }
 
 .nav a:active {
-  font-weight: bold;
   color: rgb(250, 80, 58);
   border-bottom: 3px solid red;
+  background-color: #21b5d9;
+  padding: 20px;
 }
 
 /* Akhir Navbar */
@@ -200,10 +202,19 @@ div.desc {
   }
   #projek {
     padding-bottom: 740px;
-    padding-top: 30px;
+  }
+  #about {
+    padding-bottom: 448px;
+  }
+  #about p {
+    margin: 10px -50px;
+  }
+  .nav li {
+    display: inline;
+    width: 100%;
+    padding: 5px;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 50%;
