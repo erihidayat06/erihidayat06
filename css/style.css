@@ -76,13 +76,13 @@ body {
 #profil {
   background-color: #96d8f5;
   text-align: center;
-  padding: 170px 100px;
+  padding: 170px 5px;
   color: #373535;
   box-shadow: 0px 4px 10px rgb(199, 199, 199);
 }
 
 #profil p {
-  margin: 10px -50px;
+  margin: 40px 0px;
 }
 
 #profil img {
