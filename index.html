@@ -17,17 +17,22 @@
   </head>
   <body>
     <div class="nav">
-      <li><a href="#"> Menu</a></li>
+      <input type="checkbox" id="check" />
+        <label for="check" class="btn"><i class="bi bi-list"></i></label>
+        <label id="logo"><a class="activ" href="#">PORTOFOLIO ERI</a> </label>
+        <ul>
+      <li><a class="activ" href="#"> Menu</a></li>
       <li><a href="#profil"> Profil</a></li>
       <li><a href="#kontak"> Media </a></li>
       <li><a href="#projek"> projek </a></li>
       <li><a href="#about"> About </a></li>
+    </ul>
     </div>
 
     <!-- jumbotron -->
     <div class="jumbotron">
       <div class="container">
-      <h1>Portofolio Eri Hidayat</h1>
+      <h1 data-aos="fade-down" data-aos-duration="1000">Portofolio Eri Hidayat</h1>
       <p></p><br>
       <div class="mulai">
       <a href="#profil" data-aos="zoom-in" data-aos-delay="2500">Mulai Sekarang</a>
@@ -116,7 +121,7 @@
 <script>
   gsap.registerPlugin(TextPlugin);
   gsap.to('.jumbotron p',{duration:1.2, delay:1.5, text:'Portofolio ini di buat agar teman teman lebih mengenal saya mengenai projek projek yang sudah saya buat nanti'})
-  gsap.from('.jumbotron h1', {duration:1.5,y:-100,opasity:0,ease:'back'});
+  
 
 
 
