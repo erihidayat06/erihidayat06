@@ -163,11 +163,14 @@ body {
   background-color: #96d8f5;
   text-align: center;
   padding: 270px 30px;
+  height: 700px;
 }
 
 div.gallery {
   background-color: #ffffff;
   border: 1px solid #ccc;
+  margin-top: 30px;
+  float: left;
 }
 
 div.gallery:hover {
@@ -191,7 +194,8 @@ div.desc {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+  width: 80%;
+  height: 100px;
 }
 
 /* Akhir projek */
