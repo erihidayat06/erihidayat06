@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+
+    <!-- icone -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      .navbar-scrolled {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body style="background-color: #191d88">
+    <nav class="navbar navbar-expand-lg bg-main fixed-top" id="mainNav">
+      <div class="container">
+        <div class="navbar-collapse float-end" id="navbarNavAltMarkup">
+          <div class="nav nav-underline ms-auto">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#profil">Profil</a>
+            <a class="nav-link" href="#project">Project</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 style="margin-top: 150px" class="fw-bold">
+            PORTOFOLIO ERI HIDAYAT
+          </h1>
+          <p class="text-white fs-5">
+            Kamu Akan Mengetahui Tentang Saya Disini
+          </p>
+          <a
+            class="mt-5 text-white fw-bold"
+            target="_blank"
+            href="/pdf/CURRICULUM VITAE Eri.pdf"
+            >Download CV</a
+          >
+          <div class="mt-5">
+            <a href="#profil" class="btn btn-warning fw-bold">Telusuri</a>
+          </div>
+        </div>
+
+        <div class="col d-none d-lg-block">
+          <div style="margin-top: 100px">
+            <div class="bulat"></div>
+            <img class="foto" src="/img/foto.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil -->
+      <div id="profil"></div>
+      <div class="profil text-center">
+        <h1>Profil</h1>
+        <p>
+          Hallo, Saya <strong>Eri Hidayat</strong> Seorang Mahasiswa podi
+          Informatika suka dengan dunia pemprograman sejak pertama kali masuk
+          kuliah. Framwork yang bisa saya pakai untuk membuat website adalah
+          <strong>LARAVEL</strong> yang menggunakan bahasa pemprograman PHP.
+          Saya juga sudah lumayan sering membaut project dengan freamwork
+          tersebut saat tugas maupun real project.
+        </p>
+
+        <p>
+          Selain saya suka programing saya juga sebagai content creator yang
+          aktif di Youtube dan juga Tiktok
+        </p>
+      </div>
+
+      <!-- Project -->
+      <div id="project"></div>
+
+      <div class="project">
+        <h1 class="text-center">Project</h1>
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-5">
+          <!-- Kunjungan Pepustakaan -->
+          <div class="col">
+            <div class="card">
+              <img src="/img/kunjungan-perpus.png" alt="" />
+              <div class="p-2">
+                <h4 class="fw-bold">Website Kunjungan Perpus</h4>
+              </div>
+              <div class="card-body">
+                <a
+                  href=""
+                  class="f-main"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Lihat Selengkapnya</a
+                >
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">
+                      Modal title
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/img/kunjungan-perpus.png" width="100%" alt="" />
+                  </div>
+                  <div class="container">
+                    <p>
+                      Website Kunjungan Perpustakaan ini saya buat saat saya
+                      melakukan PKL di MTs N 1 Tegal yang digunakan untuk
+                      mempermudah petugas perpus saat melakukan rekap kunjungan
+                      perpustakaan yang semualanya manual menggunakan buku
+                      sekarang sudah otomotis karena menggunakan website
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="" type="button" class="btn btn-primary">
+                      Lihat Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Kunjungan Pepus -->
+
+          <!-- Cafe Journey -->
+          <div class="col">
+            <div class="card">
+              <img src="/img/cofe-journey.png" alt="" />
+              <div class="p-2">
+                <h4 class="fw-bold">Website Cafe Journey</h4>
+              </div>
+              <div class="card-body">
+                <a
+                  href=""
+                  class="f-main"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cafe-journey"
+                  >Lihat Selengkapnya</a
+                >
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="cafe-journey"
+              tabindex="-1"
+              aria-labelledby="cafe-journeyLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">
+                      Website Cafe Journey
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/img/cofe-journey.png" width="100%" alt="" />
+                  </div>
+                  <div class="container">
+                    <p>
+                      Website cafe journey adalah website pencarian cafe agar
+                      membermudah pelanggan cafe mencari cafe yang recomendasi
+                      didalam website tersebut memiliki berbagai fitur
+                      diantaranya adalah sebagai berikut:
+                    </p>
+                    <ul>
+                      <li>Mencari kafe</li>
+                      <li>Ulasan Cafe</li>
+                      <li>Profil Cafe</li>
+                      <li>Alamat Cafe</li>
+                      <li>Jadwal Cafe</li>
+                      <li>Memilih Menu di cafe</li>
+                      <li>Reservasi cafe</li>
+                      <li>Daftar Cafe</li>
+                      <li>Admin Cafe</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="" type="button" class="btn btn-primary">
+                      Lihat Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Kunjungan Pepus -->
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact"></div>
+      <div style="margin-bottom: 200px" class="contact text-center">
+        <h1>Contact</h1>
+
+        <div class="d-flex justify-content-center">
+          <div class="row mt-5">
+            <div style="margin: 0 30px" class="col fs-1">
+              <a href="" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div style="margin: 0 30px" class="col fs-1">
+              <a href="" class="text-white"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div style="margin: 0 30px" class="col fs-1">
+              <a href="" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Container -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script
+      src="/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        var navbar = $("#mainNav");
+
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 100) {
+            /* Adjust the scroll height as needed */
+            navbar.addClass("navbar-scrolled");
+          } else {
+            navbar.removeClass("navbar-scrolled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
