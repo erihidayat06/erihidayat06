@@ -115,6 +115,9 @@
           <section id="sibudi"></section>
           <section id="lexa"></section>
           <section id="myMakeup"></section>
+          <section id="perpus"></section>
+          <section id="cafe"></section>
+          <section id="kalkulator"></section>
 
           <script>
             //sibudi
@@ -140,306 +143,31 @@
               .then((result) => {
                 myMakeup.innerHTML = result;
               });
+
+            //cafe
+            const cafe = document.getElementById("cafe");
+            fetch("./projek/cafe.html")
+              .then((snap) => snap.text())
+              .then((result) => {
+                cafe.innerHTML = result;
+              });
+
+            //perpus
+            const perpus = document.getElementById("perpus");
+            fetch("./projek/perpus.html")
+              .then((snap) => snap.text())
+              .then((result) => {
+                perpus.innerHTML = result;
+              });
+
+            //kalkulator
+            const kalkulator = document.getElementById("kalkulator");
+            fetch("./projek/kalkulator.html")
+              .then((snap) => snap.text())
+              .then((result) => {
+                kalkulator.innerHTML = result;
+              });
           </script>
-
-          <!-- Cafe Journey -->
-          <div class="col">
-            <div class="card">
-              <img
-                class="object-fit-cover border rounded"
-                src="img/cofe-journey.png"
-                alt=""
-                height="150px" />
-              <div class="p-2">
-                <h6 class="fw-bold text-truncate">Website Cafe Journey</h6>
-              </div>
-              <div class="card-body">
-                <a
-                  href=""
-                  class="f-main"
-                  data-bs-toggle="modal"
-                  data-bs-target="#cafe-journey"
-                  >Selengkapnya</a
-                >
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="cafe-journey"
-              tabindex="-1"
-              aria-labelledby="cafe-journeyLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="exampleModalLabel">
-                      Website Cafe Journey
-                    </h2>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="img/cofe-journey.png" width="100%" alt="" />
-                  </div>
-                  <div class="container mb-5">
-                    <p>
-                      Website cafe journey adalah website pencarian cafe agar
-                      membermudah pelanggan cafe mencari cafe yang recomendasi
-                      didalam website tersebut memiliki berbagai fitur
-                      diantaranya adalah sebagai berikut:
-                    </p>
-                    <ul>
-                      <li>Mencari kafe</li>
-                      <li>Ulasan Cafe</li>
-                      <li>Profil Cafe</li>
-                      <li>Alamat Cafe</li>
-                      <li>Jadwal Cafe</li>
-                      <li>Memilih Menu di cafe</li>
-                      <li>Reservasi cafe</li>
-                      <li>Daftar Cafe</li>
-                      <li>Admin Cafe</li>
-                    </ul>
-
-                    <!-- Bahasa Pemprograman -->
-                    <div class="justify-contain-start mb-3">
-                      <p class="fw-bold">Bahasa Pemprograman</p>
-                      <img
-                        src="img/html.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                      <img
-                        src="img/css.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-
-                      <img
-                        src="img/js.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-
-                      <img
-                        src="img/php.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                    </div>
-                    <!-- End Bahasa Pemprograman -->
-
-                    <!-- Framework -->
-                    <p class="fw-bold">Framework</p>
-                    <div class="justify-contain-start">
-                      <img
-                        src="img/laravel.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                      <img
-                        src="img/bootstrap.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                    </div>
-                    <!-- End Bahasa Framework -->
-                  </div>
-                  <div class="modal-footer">
-                    <a href="" type="button" class="btn btn-primary">
-                      Lihat Project
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Cafe Journey -->
-
-          <!-- Kunjungan Pepustakaan -->
-          <div class="col">
-            <div class="card">
-              <img
-                class="object-fit-cover border rounded"
-                src="img/kunjungan-perpus.png"
-                alt=""
-                height="150px" />
-              <div class="p-2">
-                <h6 class="fw-bold text-truncate">Website Kunjungan Perpus</h6>
-              </div>
-              <div class="card-body">
-                <a
-                  href=""
-                  class="f-main"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                  >Selengkapnya</a
-                >
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="exampleModalLabel">
-                      Website Kunjungan Perpus
-                    </h2>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="img/kunjungan-perpus.png" width="100%" alt="" />
-                  </div>
-                  <div class="container mb-5">
-                    <p>
-                      Website Kunjungan Perpustakaan ini saya buat saat saya
-                      melakukan PKL di MTs N 1 Tegal yang digunakan untuk
-                      mempermudah petugas perpus saat melakukan rekap kunjungan
-                      perpustakaan yang semualanya manual menggunakan buku
-                      sekarang sudah otomotis karena menggunakan website
-                    </p>
-                    <!-- Bahasa Pemprograman -->
-                    <div class="justify-contain-start mb-3">
-                      <p class="fw-bold">Bahasa Pemprograman</p>
-                      <img
-                        src="img/html.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                      <img
-                        src="img/css.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-
-                      <img
-                        src="img/js.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-
-                      <img
-                        src="img/php.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                    </div>
-                    <!-- End Bahasa Pemprograman -->
-
-                    <!-- Framework -->
-                    <p class="fw-bold">Framework</p>
-                    <div class="justify-contain-start">
-                      <img
-                        src="img/laravel.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                      <img
-                        src="img/bootstrap.png"
-                        width="30px"
-                        height="30px"
-                        class="object-fit-scale rounded"
-                        alt="" />
-                    </div>
-                    <!-- End Bahasa Framework -->
-                  </div>
-                  <div class="modal-footer">
-                    <a href="" type="button" class="btn btn-primary">
-                      Lihat Project
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Kunjungan Pepus -->
-
-          <!-- Kunjungan Kalkulator -->
-          <div class="col">
-            <div class="card">
-              <img
-                class="object-fit-cover border rounded"
-                src="img/kalkulator.png"
-                alt=""
-                height="150px" />
-              <div class="p-2">
-                <h6 class="fw-bold text-truncate">Website Kalkulator</h6>
-              </div>
-              <div class="card-body">
-                <a
-                  href=""
-                  class="f-main"
-                  data-bs-toggle="modal"
-                  data-bs-target="#kalkulatorModal"
-                  >Selengkapnya</a
-                >
-              </div>
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="kalkulatorModal"
-              tabindex="-1"
-              aria-labelledby="kalkulatorModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="kalkulatorModalLabel">
-                      Website Kalkulator
-                    </h2>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="img/kalkulator.png" width="100%" alt="" />
-                  </div>
-                  <div class="container mb-5">
-                    <p>
-                      Website Kalkulator ini saya buat sebagai bahan belajar PHP
-                      dan juga belajar menyambungkanya Website dengan database
-                      menggunakan php
-                    </p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="" type="button" class="btn btn-primary">
-                      Lihat Project
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Kalkulator -->
         </div>
 
         <!-- Projek Lainnya -->
@@ -447,24 +175,23 @@
           <a
             href=""
             class="text-white"
-            data-bs-toggle="modal"
-            data-bs-target="#projekLainModal">
+            data-bs-target="#projekLainToggle"
+            data-bs-toggle="modal">
             Project Lainnya >>
           </a>
         </div>
 
-        <!-- Modal -->
         <div
           class="modal fade"
-          id="projekLainModal"
-          tabindex="-1"
-          aria-labelledby="projekLainModalLabel"
-          aria-hidden="true">
+          id="projekLainToggle"
+          aria-hidden="true"
+          aria-labelledby="projekLainToggleLabel"
+          tabindex="-1">
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header modal-project">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Project Lainnya
+                <h1 class="modal-title fs-5" id="projekLainToggleLabel">
+                  Projek Lain
                 </h1>
                 <div data-bs-theme="dark">
                   <button
@@ -476,148 +203,33 @@
               </div>
               <div class="modal-body modal-project">
                 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-5">
-                  <!-- Website Kalkulator -->
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        class="object-fit-cover border rounded"
-                        src="img/five-day.png"
-                        alt=""
-                        height="150px" />
-                      <div class="p-2">
-                        <h6 class="fw-bold text-truncate">
-                          Aplikasi Toko Baju Five Day
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <a
-                          href=""
-                          class="f-main"
-                          data-bs-toggle="modal"
-                          data-bs-target="#tokoSepatuModal"
-                          >Selengkapnya</a
-                        >
-                      </div>
-                    </div>
+                  <section id="fiveDay"></section>
 
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="tokoSepatuModal"
-                      tabindex="-1"
-                      aria-labelledby="tokoSepatuModalLabel"
-                      aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h2
-                              class="modal-title fs-5"
-                              id="tokoSepatuModalLabel">
-                              Aplikasi Toko Baju Five Day
-                            </h2>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <img src="img/five-day.png" width="100%" alt="" />
-                          </div>
-                          <div class="container mb-5">
-                            <p>
-                              Aplikasi Five day ini saya buat ketika MK Dasar
-                              Pemprograman saat belajar python website ini
-                              sebagai aplikasi kasit toko baju
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <a
-                              href="https://github.com/erihidayat06/five-day-py"
-                              type="button"
-                              class="btn btn-primary">
-                              Lihat Project
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Aplikasi Karis Five Day -->
-
-                  <!-- Aplikasi Kasir Five Day -->
-                  <div class="col">
-                    <div class="card">
-                      <img
-                        class="object-fit-cover border rounded"
-                        src="img/five-day.png"
-                        alt=""
-                        height="150px" />
-                      <div class="p-2">
-                        <h6 class="fw-bold text-truncate">
-                          Aplikasi Toko Baju Five Day
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <a
-                          href=""
-                          class="f-main"
-                          data-bs-toggle="modal"
-                          data-bs-target="#tokoSepatuModal"
-                          >Selengkapnya</a
-                        >
-                      </div>
-                    </div>
-
-                    <!-- Modal -->
-                    <div
-                      class="modal fade"
-                      id="tokoSepatuModal"
-                      tabindex="-1"
-                      aria-labelledby="tokoSepatuModalLabel"
-                      aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h2
-                              class="modal-title fs-5"
-                              id="tokoSepatuModalLabel">
-                              Aplikasi Toko Baju Five Day
-                            </h2>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <img src="img/five-day.png" width="100%" alt="" />
-                          </div>
-                          <div class="container mb-5">
-                            <p>
-                              Aplikasi Five day ini saya buat ketika MK Dasar
-                              Pemprograman saat belajar python website ini
-                              sebagai aplikasi kasit toko baju
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <a
-                              href="https://github.com/erihidayat06/five-day-py"
-                              type="button"
-                              class="btn btn-primary">
-                              Lihat Project
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Aplikasi Karis Five Day -->
+                  <script>
+                    //fiveDay
+                    const fiveDay = document.getElementById("fiveDay");
+                    fetch("./projek/fiveDay.html")
+                      .then((snap) => snap.text())
+                      .then((result) => {
+                        fiveDay.innerHTML = result;
+                      });
+                  </script>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <section id="fiveDay2"></section>
+
+        <script>
+          //fiveDay2
+          const fiveDay2 = document.getElementById("fiveDay2");
+          fetch("./projek/fiveDay2.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+              fiveDay2.innerHTML = result;
+            });
+        </script>
       </div>
 
       <!-- Contact -->
