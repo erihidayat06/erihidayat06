@@ -58,8 +58,8 @@
           <a
             class="mt-5 text-white fw-bold"
             target="_blank"
-            href="pdf/CURRICULUM VITAE Eri.pdf"
-            >Download CV</a
+            href="pdf/CV ERI HIDAYAT.pdf"
+            >CV</a
           >
           <a
             class="mt-5 ms-3 text-white fw-bold"
@@ -96,12 +96,16 @@
       <div class="profil text-center">
         <h1>Profil</h1>
         <p>
-          Hallo, Saya <strong>Eri Hidayat</strong> Seorang Mahasiswa prodi
-          Informatika suka dengan dunia pemprograman sejak pertama kali masuk
-          kuliah. Framwork yang bisa saya pakai untuk membuat website adalah
-          <strong>LARAVEL</strong> yang menggunakan bahasa pemprograman PHP.
-          Saya juga sudah lumayan sering membaut project dengan freamwork
-          tersebut saat tugas maupun real project.
+          Nama <strong>Eri Hidayat</strong> saya seorang programer web
+          development sudah beberapa kali membuat sebuah website di instansi
+          pemerintahan terutama di daerah brebes secara fullstack. Framwork yang
+          saya kuasai di antaranya
+          <strong>
+            Laravel, CodeIgniter 3, Express JS, React JS dan lain
+            sebagainya</strong
+          >. Saya mudah belajar hal baru yang berkaitan dengan pemprograman dan
+          bisa bekerja dengan menggunakan tools AI agar lebih mempermudah dan
+          mempercepat dalam membangun sebuah program.
         </p>
 
         <p>
@@ -119,11 +123,11 @@
         <h1 class="text-center mb-5">Project</h1>
         <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
           <section id="sibudi"></section>
-          <section id="lexa"></section>
+          <section id="cineplex"></section>
           <section id="myMakeup"></section>
           <section id="perpus"></section>
           <section id="cafe"></section>
-          <section id="kalkulator"></section>
+          <section id="situga"></section>
 
           <script>
             //sibudi
@@ -135,11 +139,11 @@
               });
 
             //lexa
-            const lexa = document.getElementById("lexa");
-            fetch("./projek/lexa.html")
+            const cineplex = document.getElementById("cineplex");
+            fetch("./projek/cineplex.html")
               .then((snap) => snap.text())
               .then((result) => {
-                lexa.innerHTML = result;
+                cineplex.innerHTML = result;
               });
 
             //myMakeup
@@ -166,12 +170,12 @@
                 perpus.innerHTML = result;
               });
 
-            //kalkulator
-            const kalkulator = document.getElementById("kalkulator");
-            fetch("./projek/kalkulator.html")
+            //situga
+            const situga = document.getElementById("situga");
+            fetch("./projek/situga.html")
               .then((snap) => snap.text())
               .then((result) => {
-                kalkulator.innerHTML = result;
+                situga.innerHTML = result;
               });
           </script>
         </div>
@@ -210,6 +214,9 @@
               <div class="modal-body modal-project">
                 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-5">
                   <section id="fiveDay"></section>
+                  <section id="kalkulator"></section>
+                  <section id="lexa"></section>
+                  <section id="pagejugan"></section>
 
                   <script>
                     //fiveDay
@@ -219,6 +226,29 @@
                       .then((result) => {
                         fiveDay.innerHTML = result;
                       });
+
+                    //lexa
+                    const lexa = document.getElementById("lexa");
+                    fetch("./projek/lexa.html")
+                      .then((snap) => snap.text())
+                      .then((result) => {
+                        lexa.innerHTML = result;
+                      });
+
+                    //kalkulator
+                    const kalkulator = document.getElementById("kalkulator");
+                    fetch("./projek/kalkulator.html")
+                      .then((snap) => snap.text())
+                      .then((result) => {
+                        kalkulator.innerHTML = result;
+                      });
+                    //pagejugan
+                    const pagejugan = document.getElementById("pagejugan");
+                    fetch("./projek/pagejugan.html")
+                      .then((snap) => snap.text())
+                      .then((result) => {
+                        pagejugan.innerHTML = result;
+                      });
                   </script>
                 </div>
               </div>
@@ -226,6 +256,9 @@
           </div>
         </div>
         <section id="fiveDay2"></section>
+        <section id="kalkulator2"></section>
+        <section id="lexa2"></section>
+        <section id="pagejugan2"></section>
 
         <script>
           //fiveDay2
@@ -234,6 +267,25 @@
             .then((snap) => snap.text())
             .then((result) => {
               fiveDay2.innerHTML = result;
+            });
+          //kalkulator2
+          const kalkulator2 = document.getElementById("kalkulator2");
+          fetch("./projek/kalkulator2.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+              kalkulator2.innerHTML = result;
+            });
+          const lexa2 = document.getElementById("lexa2");
+          fetch("./projek/lexa2.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+              lexa2.innerHTML = result;
+            });
+          const pagejugan2 = document.getElementById("pagejugan2");
+          fetch("./projek/pagejugan2.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+              pagejugan2.innerHTML = result;
             });
         </script>
       </div>
