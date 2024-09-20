@@ -121,64 +121,10 @@
 
       <div class="project">
         <h1 class="text-center mb-5">Project</h1>
-        <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
-          <section id="sibudi"></section>
-          <section id="cineplex"></section>
-          <section id="myMakeup"></section>
-          <section id="perpus"></section>
-          <section id="cafe"></section>
-          <section id="situga"></section>
 
-          <script>
-            //sibudi
-            const sibudi = document.getElementById("sibudi");
-            fetch("./projek/sibudi.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                sibudi.innerHTML = result;
-              });
-
-            //lexa
-            const cineplex = document.getElementById("cineplex");
-            fetch("./projek/cineplex.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                cineplex.innerHTML = result;
-              });
-
-            //myMakeup
-            const myMakeup = document.getElementById("myMakeup");
-            fetch("./projek/myMakeup.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                myMakeup.innerHTML = result;
-              });
-
-            //cafe
-            const cafe = document.getElementById("cafe");
-            fetch("./projek/cafe.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                cafe.innerHTML = result;
-              });
-
-            //perpus
-            const perpus = document.getElementById("perpus");
-            fetch("./projek/perpus.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                perpus.innerHTML = result;
-              });
-
-            //situga
-            const situga = document.getElementById("situga");
-            fetch("./projek/situga.html")
-              .then((snap) => snap.text())
-              .then((result) => {
-                situga.innerHTML = result;
-              });
-          </script>
-        </div>
+        <div
+          class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3"
+          id="project-container"></div>
 
         <!-- Projek Lainnya -->
         <div class="text-center mt-5">
@@ -212,82 +158,14 @@
                 </div>
               </div>
               <div class="modal-body modal-project">
-                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-5">
-                  <section id="fiveDay"></section>
-                  <section id="kalkulator"></section>
-                  <section id="lexa"></section>
-                  <section id="pagejugan"></section>
-
-                  <script>
-                    //fiveDay
-                    const fiveDay = document.getElementById("fiveDay");
-                    fetch("./projek/fiveDay.html")
-                      .then((snap) => snap.text())
-                      .then((result) => {
-                        fiveDay.innerHTML = result;
-                      });
-
-                    //lexa
-                    const lexa = document.getElementById("lexa");
-                    fetch("./projek/lexa.html")
-                      .then((snap) => snap.text())
-                      .then((result) => {
-                        lexa.innerHTML = result;
-                      });
-
-                    //kalkulator
-                    const kalkulator = document.getElementById("kalkulator");
-                    fetch("./projek/kalkulator.html")
-                      .then((snap) => snap.text())
-                      .then((result) => {
-                        kalkulator.innerHTML = result;
-                      });
-                    //pagejugan
-                    const pagejugan = document.getElementById("pagejugan");
-                    fetch("./projek/pagejugan.html")
-                      .then((snap) => snap.text())
-                      .then((result) => {
-                        pagejugan.innerHTML = result;
-                      });
-                  </script>
-                </div>
+                <div
+                  class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3"
+                  id="project-lainnya"></div>
               </div>
             </div>
           </div>
         </div>
-        <section id="fiveDay2"></section>
-        <section id="kalkulator2"></section>
-        <section id="lexa2"></section>
-        <section id="pagejugan2"></section>
-
-        <script>
-          //fiveDay2
-          const fiveDay2 = document.getElementById("fiveDay2");
-          fetch("./projek/fiveDay2.html")
-            .then((snap) => snap.text())
-            .then((result) => {
-              fiveDay2.innerHTML = result;
-            });
-          //kalkulator2
-          const kalkulator2 = document.getElementById("kalkulator2");
-          fetch("./projek/kalkulator2.html")
-            .then((snap) => snap.text())
-            .then((result) => {
-              kalkulator2.innerHTML = result;
-            });
-          const lexa2 = document.getElementById("lexa2");
-          fetch("./projek/lexa2.html")
-            .then((snap) => snap.text())
-            .then((result) => {
-              lexa2.innerHTML = result;
-            });
-          const pagejugan2 = document.getElementById("pagejugan2");
-          fetch("./projek/pagejugan2.html")
-            .then((snap) => snap.text())
-            .then((result) => {
-              pagejugan2.innerHTML = result;
-            });
-        </script>
+        <div id="project-lainnya-modal"></div>
       </div>
 
       <!-- Contact -->
@@ -347,6 +225,206 @@
             navbar.removeClass("navbar-scrolled");
           }
         });
+      });
+    </script>
+
+    <script src="projek/projeck.js"></script>
+    <script>
+      // Function to dynamically generate projects with starting index and limit
+      function renderProjects1(startIndex = 0, limit = projek.length) {
+        const container = document.querySelector("#project-container"); // Assuming this is where projects1 are rendered
+
+        // Limit and slice the projek array based on the startIndex and limit
+        const limitedProjects1 = projek.slice(startIndex, startIndex + limit);
+
+        // Clear the container before appending new items
+        container.innerHTML = "";
+
+        limitedProjects1.forEach((project, index) => {
+          const actualIndex = startIndex + index; // To ensure modals have unique IDs
+
+          // Create project card HTML
+          const projectHTML = `
+    <div class="col">
+      <div class="card">
+        <img class="object-fit-cover border rounded" src="${
+          project.gambar
+        }" alt="${project.nama_projek}" height="150px" />
+        <div class="p-2">
+          <h6 class="fw-bold text-truncate">${project.nama_projek}</h6>
+        </div>
+        <div class="card-body">
+          <a href="#" class="f-main" data-bs-toggle="modal" data-bs-target="#modal${actualIndex}">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal${actualIndex}" tabindex="-1" aria-labelledby="modalLabel${actualIndex}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalLabel${actualIndex}">${
+            project.nama_projek
+          }</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="${project.gambar}" width="100%" alt="${
+            project.nama_projek
+          }" />
+            </div>
+            <div class="container mb-5">
+              <p class="fw-bold">Deskripsi</p>
+              <p>${project.deskripsi}</p>
+
+              <!-- Bahasa Pemprograman -->
+              <p class="fw-bold">Bahasa Pemprograman</p>
+              <div class="justify-contain-start mb-3">
+                ${project.bahasa
+                  .map(
+                    (bahasa) =>
+                      `<img src="${bahasa}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Bahasa Pemprograman -->
+
+              <!-- Framework -->
+              <p class="fw-bold">Framework</p>
+              <div class="justify-contain-start">
+                ${project.framework
+                  .map(
+                    (framework) =>
+                      `<img src="${framework}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Framework -->
+            </div>
+            <div class="modal-footer">
+        
+           
+              <a href="${
+                project.link
+              }" type="button" class="btn btn-primary">Lihat Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+          // Append the project HTML to the container
+          container.innerHTML += projectHTML;
+        });
+      }
+
+      // Call the function to render projects1 with specific index and limit
+      document.addEventListener("DOMContentLoaded", function () {
+        renderProjects1(0, 6); // Starts from index 1 and shows only 1 project
+      });
+    </script>
+
+    <script>
+      // Function to dynamically generate projects2 with starting index and limit
+      function renderProjects2(startIndex = 0, limit = projek.length) {
+        const container = document.querySelector("#project-lainnya"); // Assuming this is where projects2 are rendered
+        const modal = document.querySelector("#project-lainnya-modal"); // Assuming this is where projects2 are rendered
+
+        // Limit and slice the projek array based on the startIndex and limit
+        const limitedProjects2 = projek.slice(startIndex, startIndex + limit);
+
+        // Clear the container before appending new items
+        container.innerHTML = "";
+        modal.innerHTML = "";
+
+        limitedProjects2.forEach((project, index) => {
+          const actualIndex = startIndex + index; // To ensure modals have unique IDs
+
+          // Create project card HTML
+          const projectHTML2 = `
+    <div class="col">
+      <div class="card">
+        <img class="object-fit-cover border rounded" src="${project.gambar}" alt="${project.nama_projek}" height="150px" />
+        <div class="p-2">
+          <h6 class="fw-bold text-truncate">${project.nama_projek} </h6>
+        </div>
+        <div class="card-body">
+          <a href="#" class="f-main" data-bs-toggle="modal" data-bs-target="#modal2${actualIndex}">Selengkapnya</a>
+        </div>
+      </div>
+
+      
+    `;
+          // Create project card HTML
+          const projectHTMLmodal = `
+    <!-- Modal -->
+      <div class="modal fade" id="modal2${actualIndex}" tabindex="-1" aria-labelledby="modal2Label${actualIndex}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modal2Label${actualIndex}">${
+            project.nama_projek
+          }</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="${project.gambar}" width="100%" alt="${
+            project.nama_projek
+          }" />
+            </div>
+            <div class="container mb-5">
+              <p class="fw-bold">Deskripsi</p>
+              <p>${project.deskripsi}</p>
+
+              <!-- Bahasa Pemprograman -->
+              <p class="fw-bold">Bahasa Pemprograman</p>
+              <div class="justify-contain-start mb-3">
+                ${project.bahasa
+                  .map(
+                    (bahasa) =>
+                      `<img src="${bahasa}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Bahasa Pemprograman -->
+
+              <!-- Framework -->
+              <p class="fw-bold">Framework</p>
+              <div class="justify-contain-start">
+                ${project.framework
+                  .map(
+                    (framework) =>
+                      `<img src="${framework}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Framework -->
+            </div>
+            <div class="modal-footer">
+         <a  data-bs-target="#projekLainToggle"
+            data-bs-toggle="modal" class="btn btn-secondary">Kembali</a>
+              <a href="${
+                project.link
+              }" type="button" class="btn btn-primary">Lihat Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+    `;
+
+          // Append the project HTML to the container
+          container.innerHTML += projectHTML2;
+          modal.innerHTML += projectHTMLmodal;
+        });
+      }
+
+      // Call the function to render projects2 with specific index and limit
+      document.addEventListener("DOMContentLoaded", function () {
+        renderProjects2(6, 9999999999); // Starts from index 1 and shows only 1 project
       });
     </script>
   </body>
