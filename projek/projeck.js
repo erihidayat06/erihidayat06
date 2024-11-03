@@ -55,6 +55,25 @@ projek = [
     framework: ["img/laravel.png", "img/bootstrap.png"],
     link: "https://github.com/erihidayat06/kunjungan-perpus",
   },
+
+  {
+    nama_projek: "Aplikasi Keuangan SIBUDI",
+    gambar: "img/keuangan-sibudi.png",
+    deskripsi:
+      "Website aplikasi keuangan SIBUDI merupakan aplikasi untuk mengelola keuangan diBumdes yang bisa di gunakan oleh semua bumdes di indonesia yang berbentuk akuntansi ada neraca, laporan labarugi, perubahan aruskas, perubahan modal dan lain sebagainya.",
+    bahasa: ["img/html.png", "img/css.png", "img/js.png", "img/php.png"],
+    framework: ["img/laravel.png", "img/bootstrap.png"],
+    link: "https://apksibudi.my.id/",
+  },
+  {
+    nama_projek: "Website Situga",
+    gambar: "img/situga.png",
+    deskripsi:
+      "Website situga merupakan website laporan harga barang yang ada di pasar tradisonal kabupaten brebes.  ",
+    bahasa: ["img/html.png", "img/css.png", "img/js.png", "img/php.png"],
+    framework: ["img/laravel.png", "img/bootstrap.png"],
+    link: "https://github.com/erihidayat06/harga-pasar",
+  },
   {
     nama_projek: "Website Cafe Journey ",
     gambar: "img/cofe-journey.png",
@@ -77,15 +96,6 @@ projek = [
     bahasa: ["img/html.png", "img/css.png", "img/js.png", "img/php.png"],
     framework: ["img/laravel.png", "img/bootstrap.png"],
     link: "https://github.com/erihidayat06/cafe-journey",
-  },
-  {
-    nama_projek: "Website Situga",
-    gambar: "img/situga.png",
-    deskripsi:
-      "Website situga merupakan website laporan harga barang yang ada di pasar tradisonal kabupaten brebes.  ",
-    bahasa: ["img/html.png", "img/css.png", "img/js.png", "img/php.png"],
-    framework: ["img/laravel.png", "img/bootstrap.png"],
-    link: "https://github.com/erihidayat06/harga-pasar",
   },
   {
     nama_projek: "Five Day",
