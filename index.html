@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Eri Hidayat</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+
+    <!-- icone -->
+    <link rel="icon" type="image/x-icon" href="/img/eri-hidayat.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      .navbar-scrolled {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body style="background-color: #191d88">
+    <nav class="navbar navbar-expand-lg bg-main fixed-top" id="mainNav">
+      <div class="container">
+        <div class="navbar-collapse float-end" id="navbarNavAltMarkup">
+          <div class="nav nav-underline ms-auto">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#profil">Profil</a>
+            <a class="nav-link" href="#project">Project</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2 g-1 g-lg-2 mt-5">
+        <div class="col">
+          <h1 style="margin-top: 150px" class="fw-bold">
+            PORTOFOLIO ERI HIDAYAT
+          </h1>
+          <p class="text-white fs-5">
+            Kamu Akan Mengetahui Tentang Saya Disini
+          </p>
+          <a
+            class="mt-5 text-white fw-bold"
+            target="_blank"
+            href="pdf/CV ERI HIDAYAT.pdf"
+            >CV</a
+          >
+          <a
+            class="mt-5 ms-3 text-white fw-bold"
+            target="_blank"
+            href="https://drive.google.com/drive/folders/13oiT-5IbD2t2aF8vVph5YtGcRniV_077?usp=sharing">
+            <i class="bi bi-file-earmark-text-fill"></i> Sertifikat
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/eri-hidayat-b88653287/"
+            class="ms-3 text-white"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <div class="mt-5">
+            <a href="#profil" class="btn btn-warning fw-bold">Telusuri</a>
+          </div>
+          <div style="margin-top: 100px">
+            <img
+              class="foto-hp shadow d-block d-lg-none"
+              src="img/foto.png"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="col d-none d-lg-block">
+          <div style="margin-top: 100px">
+            <div class="bulat"></div>
+            <img class="foto shadow" src="img/foto.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Profil -->
+      <div id="profil"></div>
+      <div class="profil text-center">
+        <h1>Profil</h1>
+        <p>
+          Nama <strong>Eri Hidayat</strong> saya seorang programer web
+          development sudah beberapa kali membuat sebuah website di instansi
+          pemerintahan terutama di daerah brebes secara fullstack. Framwork yang
+          saya kuasai di antaranya
+          <strong>
+            Laravel, CodeIgniter 3, Express JS, React JS dan lain
+            sebagainya</strong
+          >. Saya mudah belajar hal baru yang berkaitan dengan pemprograman dan
+          bisa bekerja dengan menggunakan tools AI agar lebih mempermudah dan
+          mempercepat dalam membangun sebuah program.
+        </p>
+
+        <p>
+          Selain saya suka programing saya juga sebagai content creator yang
+          aktif di Youtube dan juga Tiktok
+        </p>
+      </div>
+
+      <!-- End Profil -->
+
+      <!-- Project -->
+      <div id="project"></div>
+
+      <div class="project">
+        <h1 class="text-center mb-5">Project</h1>
+
+        <div
+          class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3"
+          id="project-container"></div>
+
+        <!-- Projek Lainnya -->
+        <div class="text-center mt-5">
+          <a
+            href=""
+            class="text-white"
+            data-bs-target="#projekLainToggle"
+            data-bs-toggle="modal">
+            Project Lainnya >>
+          </a>
+        </div>
+
+        <div
+          class="modal fade"
+          id="projekLainToggle"
+          aria-hidden="true"
+          aria-labelledby="projekLainToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header modal-project">
+                <h1 class="modal-title fs-5" id="projekLainToggleLabel">
+                  Projek Lain
+                </h1>
+                <div data-bs-theme="dark">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close  "></button>
+                </div>
+              </div>
+              <div class="modal-body modal-project">
+                <div
+                  class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3"
+                  id="project-lainnya"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="project-lainnya-modal"></div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact"></div>
+      <div style="margin-bottom: 200px" class="contact text-center">
+        <h1>Contact</h1>
+
+        <div class="d-flex justify-content-center">
+          <div class="row mt-5">
+            <div style="margin: 0 30px" class="col fs-1">
+              <a
+                href="https://www.instagram.com/erisemonomono/"
+                class="text-white"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <div style="margin: 0 30px" class="col fs-1">
+              <a
+                href="https://www.youtube.com/@erihidayat850"
+                class="text-white"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+            <div style="margin: 0 30px" class="col fs-1">
+              <a
+                href="https://www.tiktok.com/@tutorialandroid18"
+                class="text-white"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Container -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <script
+      src="js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        var navbar = $("#mainNav");
+
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 100) {
+            /* Adjust the scroll height as needed */
+            navbar.addClass("navbar-scrolled");
+          } else {
+            navbar.removeClass("navbar-scrolled");
+          }
+        });
+      });
+    </script>
+
+    <script src="projek/projeck.js"></script>
+    <script>
+      // Function to dynamically generate projects with starting index and limit
+      function renderProjects1(startIndex = 0, limit = projek.length) {
+        const container = document.querySelector("#project-container"); // Assuming this is where projects1 are rendered
+
+        // Limit and slice the projek array based on the startIndex and limit
+        const limitedProjects1 = projek.slice(startIndex, startIndex + limit);
+
+        // Clear the container before appending new items
+        container.innerHTML = "";
+
+        limitedProjects1.forEach((project, index) => {
+          const actualIndex = startIndex + index; // To ensure modals have unique IDs
+
+          // Create project card HTML
+          const projectHTML = `
+    <div class="col">
+      <div class="card">
+        <img class="object-fit-cover border rounded" src="${
+          project.gambar
+        }" alt="${project.nama_projek}" height="150px" />
+        <div class="p-2">
+          <h6 class="fw-bold text-truncate">${project.nama_projek}</h6>
+        </div>
+        <div class="card-body">
+          <a href="#" class="f-main" data-bs-toggle="modal" data-bs-target="#modal${actualIndex}">Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal${actualIndex}" tabindex="-1" aria-labelledby="modalLabel${actualIndex}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modalLabel${actualIndex}">${
+            project.nama_projek
+          }</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="${project.gambar}" width="100%" alt="${
+            project.nama_projek
+          }" />
+            </div>
+            <div class="container mb-5">
+              <p class="fw-bold">Deskripsi</p>
+              <p>${project.deskripsi}</p>
+
+              <!-- Bahasa Pemprograman -->
+              <p class="fw-bold">Bahasa Pemprograman</p>
+              <div class="justify-contain-start mb-3">
+                ${project.bahasa
+                  .map(
+                    (bahasa) =>
+                      `<img src="${bahasa}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Bahasa Pemprograman -->
+
+              <!-- Framework -->
+              <p class="fw-bold">Framework</p>
+              <div class="justify-contain-start">
+                ${project.framework
+                  .map(
+                    (framework) =>
+                      `<img src="${framework}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Framework -->
+            </div>
+            <div class="modal-footer">
+        
+           
+              <a href="${
+                project.link
+              }" type="button" class="btn btn-primary">Lihat Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+          // Append the project HTML to the container
+          container.innerHTML += projectHTML;
+        });
+      }
+
+      // Call the function to render projects1 with specific index and limit
+      document.addEventListener("DOMContentLoaded", function () {
+        renderProjects1(0, 6); // Starts from index 1 and shows only 1 project
+      });
+    </script>
+
+    <script>
+      // Function to dynamically generate projects2 with starting index and limit
+      function renderProjects2(startIndex = 0, limit = projek.length) {
+        const container = document.querySelector("#project-lainnya"); // Assuming this is where projects2 are rendered
+        const modal = document.querySelector("#project-lainnya-modal"); // Assuming this is where projects2 are rendered
+
+        // Limit and slice the projek array based on the startIndex and limit
+        const limitedProjects2 = projek.slice(startIndex, startIndex + limit);
+
+        // Clear the container before appending new items
+        container.innerHTML = "";
+        modal.innerHTML = "";
+
+        limitedProjects2.forEach((project, index) => {
+          const actualIndex = startIndex + index; // To ensure modals have unique IDs
+
+          // Create project card HTML
+          const projectHTML2 = `
+    <div class="col">
+      <div class="card">
+        <img class="object-fit-cover border rounded" src="${project.gambar}" alt="${project.nama_projek}" height="150px" />
+        <div class="p-2">
+          <h6 class="fw-bold text-truncate">${project.nama_projek} </h6>
+        </div>
+        <div class="card-body">
+          <a href="#" class="f-main" data-bs-toggle="modal" data-bs-target="#modal2${actualIndex}">Selengkapnya</a>
+        </div>
+      </div>
+
+      
+    `;
+          // Create project card HTML
+          const projectHTMLmodal = `
+    <!-- Modal -->
+      <div class="modal fade" id="modal2${actualIndex}" tabindex="-1" aria-labelledby="modal2Label${actualIndex}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="modal2Label${actualIndex}">${
+            project.nama_projek
+          }</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="${project.gambar}" width="100%" alt="${
+            project.nama_projek
+          }" />
+            </div>
+            <div class="container mb-5">
+              <p class="fw-bold">Deskripsi</p>
+              <p>${project.deskripsi}</p>
+
+              <!-- Bahasa Pemprograman -->
+              <p class="fw-bold">Bahasa Pemprograman</p>
+              <div class="justify-contain-start mb-3">
+                ${project.bahasa
+                  .map(
+                    (bahasa) =>
+                      `<img src="${bahasa}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Bahasa Pemprograman -->
+
+              <!-- Framework -->
+              <p class="fw-bold">Framework</p>
+              <div class="justify-contain-start">
+                ${project.framework
+                  .map(
+                    (framework) =>
+                      `<img src="${framework}" width="30px" height="30px" class="object-fit-scale rounded" alt="" />`
+                  )
+                  .join("")}
+              </div>
+              <!-- End Framework -->
+            </div>
+            <div class="modal-footer">
+         <a  data-bs-target="#projekLainToggle"
+            data-bs-toggle="modal" class="btn btn-secondary">Kembali</a>
+              <a href="${
+                project.link
+              }" type="button" class="btn btn-primary">Lihat Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+    `;
+
+          // Append the project HTML to the container
+          container.innerHTML += projectHTML2;
+          modal.innerHTML += projectHTMLmodal;
+        });
+      }
+
+      // Call the function to render projects2 with specific index and limit
+      document.addEventListener("DOMContentLoaded", function () {
+        renderProjects2(6, 9999999999); // Starts from index 1 and shows only 1 project
+      });
+    </script>
+  </body>
+</html>
